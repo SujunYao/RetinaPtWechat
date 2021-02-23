@@ -1,0 +1,11 @@
+# Dependency directory
+node_modules
+
+# expo
+.expo
+
+# vscode
+.vscode
+
+# package-lock
+package-lock.json
