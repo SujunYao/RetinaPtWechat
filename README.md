@@ -1,5 +1,5 @@
 <h2>RetinaPtWechat</h2>
-Patient-specific service solutions in the retina appointment referral solution system make it easy for patients to create/view/maintain/share personal information and inspection reports, as well as convenient channels to quickly create/view/maintain referral appointment-related information.<br/>
+Patient-specific service solutions in the referral audit system make it easy for patients to create/view/maintain/share personal information and inspection reports, as well as convenient channels to quickly create/view/maintain referral appointment-related information.<br/>
 (眼底检查预约转诊解决方案体系中针对患者的服务解决方案，主旨使患者可以轻松创建/查看/维护/分享个人信息及检查报告，同时有便捷渠道快速创建/查看/维护转诊预约相关信息。)<br/>
 
 ## Introduction
