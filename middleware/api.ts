@@ -9,10 +9,10 @@ const URLS = {
   TUNE: 'http://retina.voxelcloud.net.cn',
   DEV: 'http://192.168.12.225:4600' // //'http://192.168.0.33:4600'
 };
-
-const API_HOST = (process.env.NODE_ENV === 'tune' && URLS.TUNE)
-  || (process.env.NODE_ENV !== 'production' && URLS.DEV)
-  || process.env.HOST_NAME?.replace(/^\s*|\s*$/g, "") || 'http://127.0.0.1:7000';
+const API_HOST = '';
+// const API_HOST = (process.env.NODE_ENV === 'tune' && URLS.TUNE)
+//   || (process.env.NODE_ENV !== 'production' && URLS.DEV)
+//   || process.env.HOST_NAME?.replace(/^\s*|\s*$/g, "") || 'http://127.0.0.1:7000';
 
 const generateAuthorization = (openID: string, pid?: string): string => {
   return 'Basic ' + btoa(`${pid || 'null'}:${openID}`);
