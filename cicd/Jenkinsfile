@@ -1,5 +1,5 @@
 // import library
-@Library('voxelcloud-jenkins-lib@v1.0') _
+@Library('voxelcloud-jenkins-lib') _
 
 node {
     label 'model-scm'
@@ -12,7 +12,7 @@ node {
         */
         stage('Checkout') {
             // checkout default repository for this build
-            checkoutDefaultRepo()
+            checkoutRepo('RetinaPtWechat')
         }
 
         // build front end
