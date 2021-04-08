@@ -18,7 +18,8 @@ node {
         // build front end
         stage('Install') {
             nodejs('nodejs12.18') {
-                sh 'yarn global add expo-cli'
+                sh 'yarn install'
+                sh 'yarn add expo-cli'
                 sh 'yarn run build'
                 }
         }
