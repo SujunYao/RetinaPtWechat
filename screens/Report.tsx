@@ -99,7 +99,7 @@ const Report: React.FC<Props> = ({ route, navigation }) => {
     }
   }, [goRefresh, from]);
 
-  const handlePressReserve = (reservationID: number | "", examID: number, status: string) => {
+  const handlePressReserve = (reservationID: number, examID: number, status: string) => {
     if (!status && !!(reservationID)) {
       dispatch(getAPPT(reservationID));
     }
