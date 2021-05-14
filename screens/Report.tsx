@@ -100,8 +100,8 @@ const Report: React.FC<Props> = ({ route, navigation }) => {
   }, [goRefresh, from]);
 
   const handlePressReserve = (reservationID: number | "", examID: number, status: string) => {
-    if (!status) {
-      reservationID && dispatch(getAPPT(reservationID));
+    if (!status && !!(reservationID)) {
+      dispatch(getAPPT(reservationID));
     }
     examID && dispatch(getOrgInfo(examID));
     examID && dispatch(getScope(examID));
