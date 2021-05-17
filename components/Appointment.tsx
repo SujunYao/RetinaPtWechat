@@ -88,7 +88,7 @@ const Appointment: React.FC<Props> = ({
   const [detailTitleIcon, setDetailTitleIcon] = useState('');
   const [mode, setMode] = useState(APPT_MODE.SELECTOR);
   const [editContactEnable, SetEditContactEnable] = useState(true);
-  const [contactMobile, setContactMobile] = useState(apptPatientInfo.contactMobile || mobile || curUserInfo.mobile);
+  const [contactMobile, setContactMobile] = useState(apptPatientInfo.contactMobile || mobile || curUserInfo.mobile || apptPatientInfo.mobile || '');
   const groups: { [key: string]: { dates: Array<APPT_TIME> } } = {};
   const [dateGroups, setDateGroups] = useState(groups);
   const [inpState, setInpState] = useState(FIELD_STATE.DISABLED);
@@ -120,8 +120,8 @@ const Appointment: React.FC<Props> = ({
   const [showVal, setShowVal] = useState(false);
 
   useEffect(() => {
-    setContactMobile(apptPatientInfo.contactMobile || mobile || curUserInfo.mobile);
-  }, [mobile, apptPatientInfo, curUserInfo]);
+    setContactMobile(apptPatientInfo.contactMobile || mobile || curUserInfo.mobile || apptPatientInfo.mobile || '');
+  }, [mobile, apptPatientInfo, curUserInfo.mobile]);
 
   useEffect(() => {
     if (showAPPT) {
